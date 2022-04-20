@@ -19,8 +19,9 @@ const isDark = ref(true);
     <Head title="Welcome" />
 
     <div :class="isDark ? 'dark' : ''">
-        <div class="relative flex items-top justify-center min-h-screen bg-slate-200 dark:bg-stone-800 sm:items-center sm:pt-0">
-            <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+        <div class="relative flex items-top min-h-screen bg-slate-200 dark:bg-stone-800 font-body">
+
+            <!-- <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 ">
                 <Link v-if="$page.props.user" :href="route('dashboard')" class="text-sm text-stone-800 dark:text-slate-200">
                     Dashboard
                 </Link>
@@ -30,13 +31,24 @@ const isDark = ref(true);
                         Log in
                     </Link>
 
-                    <Link v-if="canRegister" :href="route('register')" class="ml-4 text-sm text-stone-800 dark:text-slate-200 ">
+                    <Link v-if="canRegister" :href="route('register')" class="ml-4 text-sm text-stone-800 dark:text-slate-200">
                         Register
                     </Link>
                 </template>
-            </div>
-            <div>
-                <IconMoon @click="isDark = !isDark" class="cursor-pointer fill-stone-800 dark:fill-slate-200 h-12 w-12"></IconMoon>
+            </div> -->
+
+            <div class="flex-col box-border w-11/12 mx-36 mt-32">
+                <div class="inline-flex w-full justify-between">
+                    <div class="align-content-center">
+                        <h2 class="text-amber-400 text-5xl font-medium">Braun</h2>
+                        <div class="w-full h-1 bg-stone-800 dark:bg-slate-200"></div>
+                    </div>
+                    <div>
+                        <button>
+                            <IconMoon @click="isDark = !isDark" class="cursor-pointer fill-stone-800 dark:fill-slate-200 h-12 w-12"></IconMoon>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
