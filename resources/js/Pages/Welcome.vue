@@ -1,19 +1,24 @@
 <script setup>
 import { Head, Link } from '@inertiajs/inertia-vue3';
 import IconMoon from '../Jetstream/IconMoon.vue'
+import {ref} from 'vue';
 
 defineProps({
     canLogin: Boolean,
     canRegister: Boolean,
     laravelVersion: String,
     phpVersion: String,
+    isDark: Boolean,
 });
+
+const isDark = ref(true);
+
 </script>
 
 <template>
     <Head title="Welcome" />
 
-    <div class="dark">
+    <div :class="isDark ? 'dark' : ''">
         <div class="relative flex items-top justify-center min-h-screen bg-slate-200 dark:bg-stone-800 sm:items-center sm:pt-0">
             <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                 <Link v-if="$page.props.user" :href="route('dashboard')" class="text-sm text-stone-800 dark:text-slate-200">
@@ -31,7 +36,7 @@ defineProps({
                 </template>
             </div>
             <div>
-                <IconMoon class="cursor-pointer fill-stone-800 dark:fill-slate-200 h-12 w-12"></IconMoon>
+                <IconMoon @click="isDark = !isDark" class="cursor-pointer fill-stone-800 dark:fill-slate-200 h-12 w-12"></IconMoon>
             </div>
         </div>
     </div>
