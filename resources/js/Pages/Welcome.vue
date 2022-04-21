@@ -1,4 +1,5 @@
 <script setup>
+
 import { Head, Link } from '@inertiajs/inertia-vue3';
 import IconMoon from '../Jetstream/IconMoon.vue';
 import BgHeader from '../Jetstream/BgHeader.vue';
