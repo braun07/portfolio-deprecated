@@ -1,6 +1,7 @@
 <script setup>
 import { Head, Link } from '@inertiajs/inertia-vue3';
-import IconMoon from '../Jetstream/IconMoon.vue'
+import IconMoon from '../Jetstream/IconMoon.vue';
+import BgHeader from '../Jetstream/BgHeader.vue';
 import {ref} from 'vue';
 
 defineProps({
@@ -18,8 +19,8 @@ const isDark = ref(true);
 <template>
     <Head title="Welcome" />
 
-    <div :class="isDark ? 'dark' : ''">
-        <div class="relative flex items-top min-h-screen bg-slate-200 dark:bg-stone-800 font-body">
+    <body :class="isDark ? 'dark' : ''">
+        <div class="relative flex items-top min-h-screen bg-slate-200 dark:bg-stone-800 font-body w-full h-full mx-auto">
 
             <!-- <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 ">
                 <Link v-if="$page.props.user" :href="route('dashboard')" class="text-sm text-stone-800 dark:text-slate-200">
@@ -37,7 +38,7 @@ const isDark = ref(true);
                 </template>
             </div> -->
 
-            <div class="flex-col box-border w-11/12 mx-36 mt-32">
+            <div class="flex-col box-border w-11/12 mx-28 mt-24">
                 <div class="inline-flex w-full justify-between">
                     <div class="align-content-center">
                         <h2 class="text-amber-400 text-5xl font-medium">Braun</h2>
@@ -49,9 +50,22 @@ const isDark = ref(true);
                         </button>
                     </div>
                 </div>
+                <div class="w-full text-center mx-auto mt-auto">
+                    <!-- Header -->
+                    <div>
+                        <p class="text-4xl dark:text-slate-200 text-stone-800">Olá, eu sou o</p>
+                        <p class="text-7xl my-2 text-amber-500 font-bold">João Braun</p>
+                        <p class="text-xl dark:text-slate-200 text-stone-800 font-light">Desenvolvedor Frontend</p>
+                        <div class="relative w-444 mx-auto flex justify-center">
+                                <img class="w-444 absolute inset-y-1/4" src="../images/meHeader.png"/>
+                                <BgHeader class="rounded-t-large bg-gradient-to-b from-amber-500 to-transparent fill-transparent mt-20 w-96"/>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
+    </body>
 
 </template>
 
