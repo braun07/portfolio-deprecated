@@ -1,7 +1,9 @@
 <script setup>
+
 import { Head, Link } from '@inertiajs/inertia-vue3';
 import IconMoon from '../Jetstream/IconMoon.vue';
 import BgHeader from '../Jetstream/BgHeader.vue';
+import NavBar from '../Jetstream/NavBar.vue';
 import {ref} from 'vue';
 
 defineProps({
@@ -20,7 +22,7 @@ const isDark = ref(true);
     <Head title="Welcome" />
 
     <body :class="isDark ? 'dark' : ''">
-        <div class="relative flex items-top min-h-screen bg-slate-200 dark:bg-stone-800 font-body w-full h-full mx-auto">
+        <div class="relative flex items-top min-h-screen bg-slate-200 dark:bg-stone-800 font-body w-full h-full mx-auto justify-center align-content-center">
 
             <!-- <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 ">
                 <Link v-if="$page.props.user" :href="route('dashboard')" class="text-sm text-stone-800 dark:text-slate-200">
@@ -34,12 +36,14 @@ const isDark = ref(true);
 
                     <Link v-if="canRegister" :href="route('register')" class="ml-4 text-sm text-stone-800 dark:text-slate-200">
                         Register
-                    </Link>
+                    </Link>.
                 </template>
             </div> -->
 
+            <NavBar/>
             <div class="flex-col box-border w-11/12 mx-28 mt-24">
-                <div class="inline-flex w-full justify-between">
+
+                <div id="home" class="flex w-full justify-between items-center">
                     <div class="align-content-center">
                         <h2 class="text-amber-400 text-5xl font-medium">Braun</h2>
                         <div class="w-full h-1 bg-stone-800 dark:bg-slate-200"></div>
@@ -62,6 +66,11 @@ const isDark = ref(true);
                         </div>
                     </div>
 
+                    <!-- About Me -->
+                    <div id="about" class="my-36">
+                        <p class="text-2xl dark:text-slate-200 text-stone-800 font-normal">Um pouco</p>
+                        <p class="text-4xl dark:text-amber-500 text-stone-800 font-bold">Sobre Mim</p>
+                    </div>
                 </div>
             </div>
         </div>
