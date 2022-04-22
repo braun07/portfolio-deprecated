@@ -17,6 +17,12 @@ module.exports = {
                 body: ['Montserrat']
                 
             },
+            spacing: {
+                '444': '28rem',
+            },
+        },
+        borderRadius: {
+            'large': '164px',
         },
     },
 
