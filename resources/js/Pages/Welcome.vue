@@ -5,6 +5,7 @@ import IconMoon from '../Jetstream/IconMoon.vue';
 import BgHeader from '../Jetstream/BgHeader.vue';
 import NavBar from '../Jetstream/NavBar.vue';
 import Glasses from '../Jetstream/Glasses.vue';
+import CheckMark from '../Jetstream/CheckMark.vue';
 import {ref} from 'vue';
 
 defineProps({
@@ -23,7 +24,7 @@ const isDark = ref(true);
     <Head title="Welcome" />
 
     <body :class="isDark ? 'dark' : ''">
-        <div class="relative flex items-top min-h-screen bg-slate-200 dark:bg-stone-800 font-body w-full h-full mx-auto justify-center align-content-center">
+        <div id="home" class="relative flex items-top min-h-screen bg-slate-200 dark:bg-stone-800 font-body w-full h-full mx-auto justify-center align-content-center">
 
             <!-- <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 ">
                 <Link v-if="$page.props.user" :href="route('dashboard')" class="text-sm text-stone-800 dark:text-slate-200">
@@ -44,7 +45,7 @@ const isDark = ref(true);
             
             <div class="flex-col box-border w-11/12 mx-28 mt-24">
                 <!-- TopBar -->
-                <div id="home" class="flex w-full justify-between items-center">
+                <div class="flex w-full justify-between items-center">
                     <div class="align-content-center">
                         <h2 class="text-amber-500 text-5xl font-medium">Braun</h2>
                         <div class="w-full h-1 bg-stone-800 dark:bg-slate-200"></div>
@@ -60,7 +61,7 @@ const isDark = ref(true);
                 <div class="w-full text-center mx-auto mt-auto">
 
                     <!-- Header -->
-                    <div>
+                    <div id="header">
                         <p class="text-4xl dark:text-slate-200 text-stone-800">Olá, eu sou o</p>
                         <p class="text-7xl my-2 text-amber-500 font-bold">João Braun</p>
                         <p class="text-xl dark:text-slate-200 text-stone-800 font-light">Desenvolvedor Frontend</p>
@@ -83,17 +84,17 @@ const isDark = ref(true);
                                 </div>
                                 <div id="infos">
                                     <div class="text-stone-800 dark:text-slate-200 flex flex-row gap-32" id="exp">
-                                        <div class="bg-slate-200 dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
+                                        <div class="bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
                                             <p class="text-amber-500">ICON</p>
                                             <p class="font-light text-xl">+1 ano</p>
                                             <p class="font-medium text-2xl">Experiência</p>
                                         </div>
-                                        <div class="bg-slate-200 dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
+                                        <div class="bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
                                             <p class="text-amber-500">ICON</p>
                                             <p class="font-light text-xl">+4 projetos</p>
                                             <p class="font-medium text-2xl">Completos</p>
                                         </div>
-                                        <div class="bg-slate-200 dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
+                                        <div class="bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
                                             <p class="text-amber-500">ICON</p>
                                             <p class="font-light font-xl">+12 Prototípos</p>
                                             <p class="font-medium text-2xl">Finalizados</p>
@@ -106,7 +107,7 @@ const isDark = ref(true);
                                         para melhorar o meu desenvolvimento profissional. 
                                     </div>
                                     <div>
-                                        <a href="../docs/curriculo.pdf" class="inline-flex px-4 py-2 border-8 border-transparent hover:bg-amber-600 text-stone-800 bg-amber-500 rounded-lg p-2 font-semibold h-14 w-44 text-3xl hover:scale-105 duration-300 ease-in-out transform transition" download>Curriculo</a>
+                                        <a href="../docs/curriculo.pdf" class="inline-flex px-4 py-2 border-8 border-transparent hover:bg-amber-600 dark:text-stone-800 text-slate-200 bg-amber-500 rounded-lg p-2 font-semibold h-14 w-44 text-3xl hover:scale-105 duration-300 ease-in-out transform transition" download>Curriculo</a>
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +116,187 @@ const isDark = ref(true);
 
                     <!-- knowledge -->
                     <div id="knowledge">
+                        <div class="mt-36 mb-24">
+                            <p class="text-2xl dark:text-slate-200 text-stone-800 font-normal">Algumas das</p>
+                            <p class="text-4xl dark:text-amber-500 text-stone-800 font-bold">Minhas Habilidades</p>
+                        </div>
+                        <div class="flex flex-row justify-center gap-14 mx-auto mb-444">
+                            <div class="justify-center mx-auto p-16 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx">
+                                <p class="text-4xl text-amber-500">Desenvolvimento Frontend</p>
+                                <div class="flex flex-row justify-between mt-10">
+                                    <div class="my-auto flex gap-4 flex-col">
+                                        <!-- html -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">HTML</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">intermediário</p>
+                                            </div>
+                                        </div>
+                                        <!-- css -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">CSS</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">intermediário</p>
+                                            </div>
+                                        </div>
+                                        <!-- Java Scrip -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">Java Script</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">intermediário</p>
+                                            </div>
+                                        </div>
+                                        <!-- GIT -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">Git</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">intermediário</p>
+                                            </div>
+                                        </div>
+                                        <!-- vue -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">Vue</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">intermediário</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div class="flex gap-5 flex-col">
+                                        <!-- Angular -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">Angular</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">Básico</p>
+                                            </div>
+                                        </div>
+                                        <!-- React -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">React</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">Básico</p>
+                                            </div>
+                                        </div>
+                                        <!-- Tailwind -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">Tailwind</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">Avançado</p>
+                                            </div>
+                                        </div>
+                                        <!-- Bootstrap -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">Bootstrap</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">intermediário</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                            <div class="justify-center mx-auto p-16 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx">
+                                <p class="text-4xl text-amber-500">Desenvolvimento Backend</p>
+                                <div class="flex flex-row justify-between mt-10">
+                                    <div class="my-auto flex gap-4 flex-col">
+                                        <!-- Mysql -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">Mysql</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">intermediário</p>
+                                            </div>
+                                        </div>
+                                        <!-- Php -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">Php</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">intermediário</p>
+                                            </div>
+                                        </div>
+                                        <!-- C# -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">C#</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">intermediário</p>
+                                            </div>
+                                        </div>
+                                        <!-- Laravel -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">Laravel</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">intermediário</p>
+                                            </div>
+                                        </div>
+                                        <!-- Flutter -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">Flutter</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">Básico</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-5 flex-col">
+                                        <!-- Java -->
+                                        <div class="flex flex-row">
+                                            <div>
+                                                <CheckMark class="fill-amber-500 h-8 w-8"/>
+                                            </div>
+                                            <div class="text-left">
+                                                <p class="text-amber-500 text-2xl font-bold">Java</p>
+                                                <p class="text-stone-800 dark:text-slate-200 text-xl font-light">Básico</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- contact -->
@@ -141,65 +322,5 @@ const isDark = ref(true);
 </template>
 
 <style scoped>
-    .bg-gray-100 {
-        background-color: #f7fafc;
-        background-color: rgba(247, 250, 252, var(--tw-bg-opacity));
-    }
-
-    .border-gray-200 {
-        border-color: #edf2f7;
-        border-color: rgba(237, 242, 247, var(--tw-border-opacity));
-    }
-
-    .text-gray-400 {
-        color: #cbd5e0;
-        color: rgba(203, 213, 224, var(--tw-text-opacity));
-    }
-
-    .text-gray-500 {
-        color: #a0aec0;
-        color: rgba(160, 174, 192, var(--tw-text-opacity));
-    }
-
-    .text-gray-600 {
-        color: #718096;
-        color: rgba(113, 128, 150, var(--tw-text-opacity));
-    }
-
-    .text-gray-700 {
-        color: #4a5568;
-        color: rgba(74, 85, 104, var(--tw-text-opacity));
-    }
-
-    .text-gray-900 {
-        color: #1a202c;
-        color: rgba(26, 32, 44, var(--tw-text-opacity));
-    }
-
-    @media (prefers-color-scheme: dark) {
-        .dark\:bg-gray-800 {
-            background-color: #2d3748;
-            background-color: rgba(45, 55, 72, var(--tw-bg-opacity));
-        }
-
-        .dark\:bg-gray-900 {
-            background-color: #1a202c;
-            background-color: rgba(26, 32, 44, var(--tw-bg-opacity));
-        }
-
-        .dark\:border-gray-700 {
-            border-color: #4a5568;
-            border-color: rgba(74, 85, 104, var(--tw-border-opacity));
-        }
-
-        .dark\:text-white {
-            color: #fff;
-            color: rgba(255, 255, 255, var(--tw-text-opacity));
-        }
-
-        .dark\:text-gray-400 {
-            color: #cbd5e0;
-            color: rgba(203, 213, 224, var(--tw-text-opacity));
-        }
-    }
+    
 </style>
