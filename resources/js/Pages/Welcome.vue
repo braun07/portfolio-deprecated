@@ -6,6 +6,8 @@ import BgHeader from '../Jetstream/BgHeader.vue';
 import NavBar from '../Jetstream/NavBar.vue';
 import Glasses from '../Jetstream/Glasses.vue';
 import CheckMark from '../Jetstream/CheckMark.vue';
+import IconDownload from '../Jetstream/IconDownload.vue';
+import Input from '../Jetstream/Input.vue';
 import {ref} from 'vue';
 
 defineProps({
@@ -107,7 +109,7 @@ const isDark = ref(true);
                                         para melhorar o meu desenvolvimento profissional. 
                                     </div>
                                     <div>
-                                        <a href="../docs/curriculo.pdf" class="inline-flex px-4 py-2 border-8 border-transparent hover:bg-amber-600 dark:text-stone-800 text-slate-200 bg-amber-500 rounded-lg p-2 font-semibold h-14 w-44 text-3xl hover:scale-105 duration-300 ease-in-out transform transition" download>Curriculo</a>
+                                        <a href="../docs/curriculo.pdf" class="inline-flex px-4 py-2 border-8 border-transparent hover:bg-amber-600 dark:text-stone-800 text-slate-200 bg-amber-500 rounded-lg p-2 font-semibold h-14 w-44 text-3xl hover:scale-105 duration-300 ease-in-out transform transition" download><IconDownload class="h-4 w-4 fill-slate-200 dark:fill-stone-800"/> Curriculo</a>
                                     </div>
                                 </div>
                             </div>
@@ -120,8 +122,8 @@ const isDark = ref(true);
                             <p class="text-2xl dark:text-slate-200 text-stone-800 font-normal">Algumas das</p>
                             <p class="text-4xl dark:text-amber-500 text-stone-800 font-bold">Minhas Habilidades</p>
                         </div>
-                        <div class="flex flex-row justify-center gap-14 mx-auto mb-444">
-                            <div class="justify-center mx-auto p-16 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx">
+                        <div class="flex flex-row justify-center gap-14 mx-auto">
+                            <div class="justify-center mx-auto p-16 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx" style="backdrop-filter: blur(20px);">
                                 <p class="text-4xl text-amber-500">Desenvolvimento Frontend</p>
                                 <div class="flex flex-row justify-between mt-10">
                                     <div class="my-auto flex gap-4 flex-col">
@@ -177,7 +179,7 @@ const isDark = ref(true);
                                         </div>
                                     </div>
 
-                                    <div class="flex gap-5 flex-col">
+                                    <div class="flex gap-5 flex-col ">
                                         <!-- Angular -->
                                         <div class="flex flex-row">
                                             <div>
@@ -224,7 +226,7 @@ const isDark = ref(true);
                                     
                                 </div>
                             </div>
-                            <div class="justify-center mx-auto p-16 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx">
+                            <div class="justify-center mx-auto p-16 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx" style="backdrop-filter: blur(20px);">
                                 <p class="text-4xl text-amber-500">Desenvolvimento Backend</p>
                                 <div class="flex flex-row justify-between mt-10">
                                     <div class="my-auto flex gap-4 flex-col">
@@ -300,9 +302,40 @@ const isDark = ref(true);
                     </div>
 
                     <!-- contact -->
-                    <div>
-
+                    <div id="contact">
+                        <div class="mt-36 mb-24">
+                            <p class="text-2xl dark:text-slate-200 text-stone-800 font-normal">Formas de</p>
+                            <p class="text-4xl dark:text-amber-500 text-stone-800 font-bold">Contato</p>
+                        </div>
+                        <div class="flex flex-row justify-center mx-auto gap-48 mb-444">
+                            <div class="flex flex-col gap-8">
+                                <div class="flex gap-2 flex-col p-6 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx" style="backdrop-filter: blur(20px);">
+                                    <p class="dark:text-white text-stone-800">icon</p>
+                                    <p class="text-3xl dark:text-slate-200 text-stone-800">Email</p>
+                                    <p class="text-stone-800 text-3xl dark:text-slate-200">joaovitorbraun6@gmail.com</p>
+                                    <p class="text-amber-500 text-3xl">Me escreva</p>
+                                </div>
+                                <div class="flex gap-2 flex-col p-6 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx" style="backdrop-filter: blur(20px);">
+                                    <p class="dark:text-white text-stone-800">icon</p>
+                                    <p class="text-3xl dark:text-slate-200 text-stone-800">Whatsapp</p>
+                                    <p class="text-stone-800 text-3xl dark:text-slate-200">+55 33 9 9819-1460</p>
+                                    <p class="text-amber-500 text-3xl">Me escreva</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-6">
+                                <div>
+                                    <p class="dark:text-slate-200 text-stone-800 text-2xl font-bold text-center">Solicite um Serviço</p>
+                                </div>
+                                <div>
+                                    <form action="">
+                                        <Input type="text" placeholder="Seu nome" class="px-72 dark:text-slate-200 placeholder:italic text-stone-800 text-center dark:placeholder:text-white placeholder:text-stone-800 dark:bg-stone-700 bg-white border border-amber-500 rounded-lx focus:border-amber-300 focus:ring focus:ring-amber-200 focus:ring-opacity-50" id="name"></Input>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
 
                     <!-- testimonial -->
                     <div>
