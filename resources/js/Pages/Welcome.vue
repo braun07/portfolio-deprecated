@@ -4,6 +4,7 @@ import { Head, Link } from '@inertiajs/inertia-vue3';
 import IconMoon from '../Jetstream/IconMoon.vue';
 import BgHeader from '../Jetstream/BgHeader.vue';
 import NavBar from '../Jetstream/NavBar.vue';
+import Glasses from '../Jetstream/Glasses.vue';
 import {ref} from 'vue';
 
 defineProps({
@@ -40,21 +41,24 @@ const isDark = ref(true);
                 </template>
             </div> -->
 
-            <NavBar/>
+            
             <div class="flex-col box-border w-11/12 mx-28 mt-24">
-
+                <!-- TopBar -->
                 <div id="home" class="flex w-full justify-between items-center">
                     <div class="align-content-center">
-                        <h2 class="text-amber-400 text-5xl font-medium">Braun</h2>
+                        <h2 class="text-amber-500 text-5xl font-medium">Braun</h2>
                         <div class="w-full h-1 bg-stone-800 dark:bg-slate-200"></div>
                     </div>
                     <div>
                         <button>
-                            <IconMoon @click="isDark = !isDark" class="cursor-pointer fill-stone-800 dark:fill-slate-200 h-12 w-12"></IconMoon>
+                            <IconMoon @click="isDark = !isDark" class="cursor-pointer fill-stone-800 dark:fill-slate-200 hover:fill-amber-500 dark:hover:fill-amber-500 h-12 w-12 hover:scale-110 duration-300 ease-in-out transform transition"></IconMoon>
                         </button>
                     </div>
                 </div>
+
+                <!-- content -->
                 <div class="w-full text-center mx-auto mt-auto">
+
                     <!-- Header -->
                     <div>
                         <p class="text-4xl dark:text-slate-200 text-stone-800">Olá, eu sou o</p>
@@ -68,11 +72,69 @@ const isDark = ref(true);
 
                     <!-- About Me -->
                     <div id="about" class="my-36">
-                        <p class="text-2xl dark:text-slate-200 text-stone-800 font-normal">Um pouco</p>
-                        <p class="text-4xl dark:text-amber-500 text-stone-800 font-bold">Sobre Mim</p>
+                        <div>
+                            <p class="text-2xl dark:text-slate-200 text-stone-800 font-normal">Um pouco</p>
+                            <p class="text-4xl dark:text-amber-500 text-stone-800 font-bold">Sobre Mim</p>
+                        </div>
+                        <div class="justify-center mt-28 mx-40">
+                            <div class="flex justify-between gap-36">
+                                <div class="text-amber-500" id="glasses">
+                                    <Glasses class="h-52 w-96 fill-amber-500"/>
+                                </div>
+                                <div id="infos">
+                                    <div class="text-stone-800 dark:text-slate-200 flex flex-row gap-32" id="exp">
+                                        <div class="bg-slate-200 dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
+                                            <p class="text-amber-500">ICON</p>
+                                            <p class="font-light text-xl">+1 ano</p>
+                                            <p class="font-medium text-2xl">Experiência</p>
+                                        </div>
+                                        <div class="bg-slate-200 dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
+                                            <p class="text-amber-500">ICON</p>
+                                            <p class="font-light text-xl">+4 projetos</p>
+                                            <p class="font-medium text-2xl">Completos</p>
+                                        </div>
+                                        <div class="bg-slate-200 dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
+                                            <p class="text-amber-500">ICON</p>
+                                            <p class="font-light font-xl">+12 Prototípos</p>
+                                            <p class="font-medium text-2xl">Finalizados</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-stone-800 dark:text-slate-200 my-9 text-2xl text-justify whitespace-normal" id="dev">
+                                        Como Desenvolvedor Frontend sou responsável pela criação
+                                        de páginas com a interface de usuário baseada em UI / UX,
+                                        sou autoditata, estou sempre correndo atrás de conhecimento
+                                        para melhorar o meu desenvolvimento profissional. 
+                                    </div>
+                                    <div>
+                                        <a href="../docs/curriculo.pdf" class="inline-flex px-4 py-2 border-8 border-transparent hover:bg-amber-600 text-stone-800 bg-amber-500 rounded-lg p-2 font-semibold h-14 w-44 text-3xl hover:scale-105 duration-300 ease-in-out transform transition" download>Curriculo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- knowledge -->
+                    <div id="knowledge">
+
+                    </div>
+
+                    <!-- contact -->
+                    <div>
+
+                    </div>
+
+                    <!-- testimonial -->
+                    <div>
+
+                    </div>
+
+                    <!-- footer -->
+                    <div>
+
                     </div>
                 </div>
             </div>
+            <NavBar/>
         </div>
     </body>
 
