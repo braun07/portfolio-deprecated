@@ -45,7 +45,7 @@ const isDark = ref(true);
             </div> -->
 
             
-            <div class="flex-col box-border w-11/12 mx-28 mt-24">
+            <div class="flex-col box-border w-11/12 mx-28 mt-10">
                 <!-- TopBar -->
                 <div class="flex w-full justify-between items-center">
                     <div class="align-content-center">
@@ -60,13 +60,15 @@ const isDark = ref(true);
                 </div>
 
                 <!-- content -->
-                <div class="w-full text-center mx-auto mt-auto">
+                <div class="w-full mx-auto mt-auto">
 
                     <!-- Header -->
                     <div id="header">
-                        <p class="text-4xl dark:text-slate-200 text-stone-800">Olá, eu sou o</p>
-                        <p class="text-7xl my-2 text-amber-500 font-bold">João Braun</p>
-                        <p class="text-xl dark:text-slate-200 text-stone-800 font-light">Desenvolvedor Frontend</p>
+                        <div class="text-center">
+                            <p class="text-4xl dark:text-slate-200 text-stone-800">Olá, eu sou o</p>
+                            <p class="text-7xl my-2 text-amber-500 font-bold">João Braun</p>
+                            <p class="text-xl dark:text-slate-200 text-stone-800 font-light">Desenvolvedor Frontend</p>
+                        </div>
                         <div class="relative w-444 mx-auto flex justify-center">
                                 <img class="w-444 absolute inset-y-1/4" src="../images/meHeader.png"/>
                                 <BgHeader class="rounded-t-large bg-gradient-to-b from-amber-500 to-transparent fill-transparent mt-20 w-96"/>
@@ -74,8 +76,8 @@ const isDark = ref(true);
                     </div>
 
                     <!-- About Me -->
-                    <div id="about" class="my-36">
-                        <div>
+                    <div id="about" class="my-60 scroll-mt-52">
+                        <div class="text-center">
                             <p class="text-2xl dark:text-slate-200 text-stone-800 font-normal">Um pouco</p>
                             <p class="text-4xl dark:text-amber-500 text-stone-800 font-bold">Sobre Mim</p>
                         </div>
@@ -84,7 +86,7 @@ const isDark = ref(true);
                                 <div class="text-amber-500" id="glasses">
                                     <Glasses class="h-52 w-96 fill-amber-500"/>
                                 </div>
-                                <div id="infos">
+                                <div id="infos" class="text-center">
                                     <div class="text-stone-800 dark:text-slate-200 flex flex-row gap-32" id="exp">
                                         <div class="bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
                                             <p class="text-amber-500">ICON</p>
@@ -117,8 +119,8 @@ const isDark = ref(true);
                     </div>
 
                     <!-- knowledge -->
-                    <div id="knowledge">
-                        <div class="mt-36 mb-24">
+                    <div id="knowledge" class="scroll-mt-12">
+                        <div class="mt-36 mb-24 text-center">
                             <p class="text-2xl dark:text-slate-200 text-stone-800 font-normal">Algumas das</p>
                             <p class="text-4xl dark:text-amber-500 text-stone-800 font-bold">Minhas Habilidades</p>
                         </div>
@@ -302,17 +304,17 @@ const isDark = ref(true);
                     </div>
 
                     <!-- contact -->
-                    <div id="contact">
-                        <div class="mt-36 mb-24">
+                    <div id="contact" class="scroll-mt-16">
+                        <div class="mt-36 mb-24 text-center">
                             <p class="text-2xl dark:text-slate-200 text-stone-800 font-normal">Formas de</p>
                             <p class="text-4xl dark:text-amber-500 text-stone-800 font-bold">Contato</p>
                         </div>
-                        <div class="flex flex-row justify-center mx-auto gap-48 mb-444">
-                            <div class="flex flex-col gap-8">
+                        <div class="flex flex-row justify-center mx-auto gap-48 mb-444 font-light">
+                            <div class="flex flex-col gap-8 text-center">
                                 <div class="flex gap-2 flex-col p-6 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx" style="backdrop-filter: blur(20px);">
                                     <p class="dark:text-white text-stone-800">icon</p>
                                     <p class="text-3xl dark:text-slate-200 text-stone-800">Email</p>
-                                    <p class="text-stone-800 text-3xl dark:text-slate-200">joaovitorbraun6@gmail.com</p>
+                                    <p class="text-stone-800 text-2xl dark:text-slate-200">joaovitorbraun6@gmail.com</p>
                                     <p class="text-amber-500 text-3xl">Me escreva</p>
                                 </div>
                                 <div class="flex gap-2 flex-col p-6 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx" style="backdrop-filter: blur(20px);">
@@ -322,13 +324,25 @@ const isDark = ref(true);
                                     <p class="text-amber-500 text-3xl">Me escreva</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-6">
+                            <div class="flex flex-col gap-6 p-5">
                                 <div>
-                                    <p class="dark:text-slate-200 text-stone-800 text-2xl font-bold text-center">Solicite um TESTE Serviço</p>
+                                    <p class="dark:text-slate-200 text-stone-800 text-2xl font-bold text-center">Me envie um e-mail</p>
                                 </div>
-                                <div>
-                                    <form action="">
-                                        <Input type="text" placeholder="Seu nome" class="px-72 dark:text-slate-200 placeholder:italic text-stone-800 text-center dark:placeholder:text-white placeholder:text-stone-800 dark:bg-stone-700 bg-white border border-amber-500 rounded-lx focus:border-amber-300 focus:ring focus:ring-amber-200 focus:ring-opacity-50" id="name"></Input>
+                                <div class="w-[37.5rem]">
+                                    <form action="" class="flex flex-col gap-3">
+                                        <label class="flex flex-col">
+                                            <span class="text-stone-800 dark:text-slate-200 ml-3">Nome:</span>
+                                            <input type="text" placeholder="Seu nome" class="dark:text-gray-600 font-light placeholder:italic text-stone-800 dark:placeholder:text-white placeholder:text-stone-800 dark:bg-stone-700 bg-white border border-amber-500 rounded-lx focus:border-amber-300 focus:ring focus:ring-amber-200 focus:ring-opacity-50" id="name">
+                                        </label>
+                                        <label class="flex flex-col">
+                                            <span class="text-stone-800 dark:text-slate-200 ml-3">Email:</span>
+                                            <input type="text" placeholder="Seuemail@email.com" class="dark:text-slate-200 font-light placeholder:italic text-stone-800 dark:placeholder:text-white placeholder:text-stone-800 dark:bg-stone-700 bg-white border border-amber-500 rounded-lx focus:border-amber-300 focus:ring focus:ring-amber-200 focus:ring-opacity-50" id="mail">
+                                        </label>
+                                        <label class="flex flex-col">
+                                            <span class="text-stone-800 dark:text-slate-200 ml-3">Serviço:</span>
+                                            <textarea rows="4" placeholder="Digite aqui o servico ao qual deseja solicitar" class="dark:text-slate-200 font-light placeholder:italic text-stone-800 dark:placeholder:text-white placeholder:text-stone-800 dark:bg-stone-700 bg-white border border-amber-500 rounded-lx focus:border-amber-300 focus:ring focus:ring-amber-200 focus:ring-opacity-50" id="job"></textarea>
+                                        </label>
+                                        <button class="w-full h-16 bg-amber-500 text-slate-200 font-bold dark:text-stone-800 rounded-lx text-2xl">Enviar</button>
                                     </form>
                                     
                                 </div>
