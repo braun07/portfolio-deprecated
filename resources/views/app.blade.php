@@ -17,11 +17,13 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
         @inertiaHead
     </head>
-    <body class="font-sans antialiased">
-        @inertia
-
-        @env ('local')
-            <script src="http://localhost:3000/browser-sync/browser-sync-client.js"></script>
-        @endenv
+    <body class="">
+        <div class="font-sans antialiased">
+            @inertia
+    
+            @env ('local')
+                <script src="http://localhost:3000/browser-sync/browser-sync-client.js"></script>
+            @endenv
+        </div>
     </body>
 </html>

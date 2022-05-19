@@ -1,31 +1,7 @@
-<script setup>
-
-import { Head, Link } from '@inertiajs/inertia-vue3';
-import IconMoon from '../Jetstream/IconMoon.vue';
-import BgHeader from '../Jetstream/BgHeader.vue';
-import NavBar from '../Jetstream/NavBar.vue';
-import Glasses from '../Jetstream/Glasses.vue';
-import CheckMark from '../Jetstream/CheckMark.vue';
-import IconDownload from '../Jetstream/IconDownload.vue';
-import Input from '../Jetstream/Input.vue';
-import {ref} from 'vue';
-
-defineProps({
-    canLogin: Boolean,
-    canRegister: Boolean,
-    laravelVersion: String,
-    phpVersion: String,
-    isDark: Boolean,
-});
-
-const isDark = ref(true);
-
-</script>
-
 <template>
     <Head title="Welcome" />
 
-    <body :class="isDark ? 'dark' : ''">
+    <body class="">
         <div id="home" class="relative flex items-top min-h-screen bg-slate-200 dark:bg-stone-800 font-body w-full h-full mx-auto justify-center align-content-center">
 
             <!-- <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 ">
@@ -53,9 +29,17 @@ const isDark = ref(true);
                         <div class="w-full h-1 bg-stone-800 dark:bg-slate-200"></div>
                     </div>
                     <div>
-                        <button>
-                            <IconMoon @click="isDark = !isDark" class="cursor-pointer fill-stone-800 dark:fill-slate-200 hover:fill-amber-500 dark:hover:fill-amber-500 h-12 w-12 hover:scale-110 duration-300 ease-in-out transform transition"></IconMoon>
-                        </button>
+                        <a href="#" @click="changeTheme">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg" 
+                                enable-background="new 0 0 24 24" 
+                                class=" cursor-pointer fill-stone-800 dark:fill-slate-200 hover:fill-amber-500 dark:hover:fill-amber-500 h-12 w-12 hover:scale-110 duration-300 ease-in-out transform transition"
+                                viewBox="0 0 24 24" 
+                                >
+                                <rect fill="none" height="24" width="24"/>
+                                <path d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
@@ -368,6 +352,59 @@ const isDark = ref(true);
 
 </template>
 
-<style scoped>
-    
-</style>
+<script>
+
+import { Head, Link } from '@inertiajs/inertia-vue3'
+import BgHeader from '../Jetstream/BgHeader.vue'
+import NavBar from '../Jetstream/NavBar.vue'
+import Glasses from '../Jetstream/Glasses.vue'
+import CheckMark from '../Jetstream/CheckMark.vue'
+import IconDownload from '../Jetstream/IconDownload.vue'
+import DarkModeToggle from '../Jetstream/DarkModeToggle.vue'
+import Input from '../Jetstream/Input.vue'
+import { onBeforeMount, onMounted } from 'vue'
+
+
+
+export default {
+    components: {
+        dark: Boolean,
+        BgHeader,
+        NavBar,
+        Glasses,
+        CheckMark,
+        IconDownload,
+        DarkModeToggle,
+        Input,
+        Head,
+        Link,
+    },
+
+    setup() {
+        onBeforeMount(() =>{
+            if(localStorage.dark == 1){
+                document.body.classList.add("dark");
+            } else {
+                document.body.classList.remove("dark");
+            }
+        })
+    },
+
+    methods: {
+        changeTheme() {
+            if(!document.body.classList.contains("dark")) {
+                document.body.classList.add("dark");
+                localStorage.setItem("dark", 1);
+            } else {
+                document.body.classList.remove("dark");
+                window.localStorage.setItem("dark", 0);
+            }
+        },
+    },
+}
+
+
+</script>
+
+
+
