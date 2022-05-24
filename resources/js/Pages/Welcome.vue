@@ -21,7 +21,7 @@
                 <!-- TopBar -->
                 <div class="flex w-full justify-between items-center">
                     <div class="align-content-center">
-                        <h2 class="text-amber-500 text-5xl font-medium">Braun</h2>
+                        <h2 class="text-amber-500 text-4xl font-semibold">Braun</h2>
                         <div class="w-full h-1 bg-stone-800 dark:bg-slate-200"></div>
                     </div>
                     <div>
@@ -295,13 +295,17 @@
                                     <p class="dark:text-white text-stone-800">icon</p>
                                     <p class="text-3xl dark:text-slate-200 text-stone-800">Email</p>
                                     <p class="text-stone-800 text-2xl dark:text-slate-200">joaovitorbraun6@gmail.com</p>
-                                    <p class="text-amber-500 text-3xl hover:text-amber-600 hover:font-normal ease-in-out transform transition hover:cursor-pointer">Me escreva</p>
+                                    <a
+                                        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=joaovitorbraun6@gmail.com" target="_blank"
+                                        class="text-amber-500 text-3xl hover:text-amber-600 hover:font-normal ease-in-out transform transition hover:cursor-pointer">
+                                        Me escreva
+                                    </a>
                                 </div>
                                 <div class="flex gap-2 flex-col p-6 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx" style="backdrop-filter: blur(20px);">
                                     <p class="dark:text-white text-stone-800">icon</p>
                                     <p class="text-3xl dark:text-slate-200 text-stone-800">Whatsapp</p>
                                     <p class="text-stone-800 text-3xl dark:text-slate-200">+55 33 9 9819-1460</p>
-                                    <p class="text-amber-500 text-3xl hover:text-amber-600 hover:font-normal ease-in-out transform transition hover:cursor-pointer">Me escreva</p>
+                                    <a href="//api.whatsapp.com/send?phone=+5533998191460&text=Olá Gostaria de conversar sobre negócios!" class="text-amber-500 text-3xl hover:text-amber-600 hover:font-normal ease-in-out transform transition hover:cursor-pointer">Me escreva</a>
                                 </div>
                             </div>
                             <div class="flex flex-col gap-6 p-5">
