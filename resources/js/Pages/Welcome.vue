@@ -295,13 +295,13 @@
                                     <p class="dark:text-white text-stone-800">icon</p>
                                     <p class="text-3xl dark:text-slate-200 text-stone-800">Email</p>
                                     <p class="text-stone-800 text-2xl dark:text-slate-200">joaovitorbraun6@gmail.com</p>
-                                    <p class="text-amber-500 text-3xl">Me escreva</p>
+                                    <p class="text-amber-500 text-3xl hover:text-amber-600 hover:font-normal ease-in-out transform transition hover:cursor-pointer">Me escreva</p>
                                 </div>
                                 <div class="flex gap-2 flex-col p-6 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx" style="backdrop-filter: blur(20px);">
                                     <p class="dark:text-white text-stone-800">icon</p>
                                     <p class="text-3xl dark:text-slate-200 text-stone-800">Whatsapp</p>
                                     <p class="text-stone-800 text-3xl dark:text-slate-200">+55 33 9 9819-1460</p>
-                                    <p class="text-amber-500 text-3xl">Me escreva</p>
+                                    <p class="text-amber-500 text-3xl hover:text-amber-600 hover:font-normal hover:cursor-pointer">Me escreva</p>
                                 </div>
                             </div>
                             <div class="flex flex-col gap-6 p-5">
@@ -322,7 +322,7 @@
                                             <span class="text-stone-800 dark:text-slate-200 ml-3">Serviço:</span>
                                             <textarea rows="4" placeholder="Digite aqui o servico ao qual deseja solicitar" class="dark:text-slate-200 font-light placeholder:italic text-stone-800 dark:placeholder:text-white placeholder:text-stone-800 dark:bg-stone-700 bg-white border border-amber-500 rounded-lx focus:border-amber-300 focus:ring focus:ring-amber-200 focus:ring-opacity-50" id="job"></textarea>
                                         </label>
-                                        <button class="w-full h-16 bg-amber-500 text-slate-200 font-bold dark:text-stone-800 rounded-lx text-2xl">Enviar</button>
+                                        <button class="w-full h-16 bg-amber-500 text-slate-200 font-bold dark:text-stone-800 rounded-lx text-2xl hover:bg-amber-600 ease-in-out transform transition">Enviar</button>
                                     </form>
                                     
                                 </div>
@@ -342,30 +342,30 @@
                 </div>
         </div>
         <!-- footer -->
-        <div id="footer" class="bg-amber-500 text-stone-800 w-full pb-32">
-                        <div class="flex text-center justify-between bg-pink-500">
-                            <div id="scroll" class="flex gap-4 my-auto font-bold">
-                                <p>Sobre</p>
-                                <p>Contato</p>
-                                <p>Clientes</p>
-                            </div>
-                            <div id="site-info" class="flex flex-col gap-2">
-                                <p class="font-bold">João Vitor Braun</p>
-                                <p>© Braun Design. All rights reserved <br> 2022 </p>
-                            </div>
-                            <div id="media-info" class="flex gap-5 my-auto">
-                                <div id="git-hub">
-                                    <p>logo1</p>
-                                </div>
-                                <div id="linked-in">
-                                    <p>logo2</p>
-                                </div>
-                                <div id="instagram">
-                                    <p>logo3</p>
-                                </div>
-                            </div>
-                        </div>
-        </div>
+        <footer class="bg-amber-500 text-stone-800 w-full pb-32">
+            <div id="site-info" class="xl:container mx-auto px-4 lg:px-6 py-4 grid grid-cols-6 items-center">
+                <div id="scroll" class="flex gap-6 my-auto font-bold text-2xl col-span-2">
+                    <a href="#about" class="hover:scale-110 duration-300 ease-in-out transform transition hover:text-slate-200">Sobre</a>
+                    <a href="#contact" class="hover:scale-110 duration-300 ease-in-out transform transition hover:text-slate-200">Contato</a>
+                    <a href="#testimonial" class="hover:scale-110 duration-300 ease-in-out transform transition hover:text-slate-200">Clientes</a>
+                </div>
+                <div class="flex-col flex col-span-2 text-2xl text-center">
+                    <p class="font-bold">João Vitor Braun</p>
+                    <p>© Braun Design. All rights reserved <br> 2022 </p>
+                </div>
+                <div id="media-info" class="flex gap-5 my-auto col-span-2 justify-end">
+                    <div id="git-hub">
+                        <p>logo1</p>
+                    </div>
+                    <div id="linked-in">
+                        <p>logo2</p>
+                    </div>
+                    <div id="instagram">
+                        <p>logo3</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <NavBar/>
 </template>
