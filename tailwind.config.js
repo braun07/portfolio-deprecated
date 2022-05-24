@@ -22,7 +22,7 @@ module.exports = {
             },
         },
         borderRadius: {
-            'large': '164px',
+            'large': '10.25rem',
             'none': '0',
             'sm': '0.125rem',
             DEFAULT: '0.25rem',
@@ -31,7 +31,10 @@ module.exports = {
             'lg': '0.5rem',
             'lx': '1.0rem',
             'xl': '1.5rem',
-            'full': '999px',
+            '1xl': '2rem',
+            '2xl': '3rem',
+            '3xl': '4.5rem',
+            'full': '63rem',
         },
     },
 

@@ -1,10 +1,7 @@
 <template>
     <Head title="Welcome" />
-
-    <body class="">
-        <div id="home" class="relative flex items-top min-h-screen bg-slate-200 dark:bg-stone-800 font-body w-full h-full mx-auto justify-center align-content-center">
-
-            <!-- <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 ">
+    <div id="home" class="relative flex flex-col items-top min-h-screen font-body w-full h-full mx-auto justify-center align-content-center">
+        <!-- <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 ">
                 <Link v-if="$page.props.user" :href="route('dashboard')" class="text-sm text-stone-800 dark:text-slate-200">
                     Dashboard
                 </Link>
@@ -19,9 +16,8 @@
                     </Link>.
                 </template>
             </div> -->
-
-            
-            <div class="flex-col box-border w-11/12 mx-28 mt-10">
+        
+        <div class="flex-col flex mx-28 mt-10">
                 <!-- TopBar -->
                 <div class="flex w-full justify-between items-center">
                     <div class="align-content-center">
@@ -73,7 +69,7 @@
                                 <div id="infos" class="text-center">
                                     <div class="text-stone-800 dark:text-slate-200 flex flex-row gap-32" id="exp">
                                         <div class="bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
-                                            <p class="text-amber-500">ICON</p>
+                                            <Experience class="mx-auto fill-amber-500"/>
                                             <p class="font-light text-xl">+1 ano</p>
                                             <p class="font-medium text-2xl">Experiência</p>
                                         </div>
@@ -336,20 +332,42 @@
                     
 
                     <!-- testimonial -->
-                    <div>
-
-                    </div>
-
-                    <!-- footer -->
-                    <div>
-
+                    <div id="testimonial" class="scroll-mt-12 my-60">
+                        <div class="mt-36 mb-24 text-center">
+                            <p class="text-2xl dark:text-slate-200 text-stone-800 font-normal">FeedBack de</p>
+                            <p class="text-4xl dark:text-amber-500 text-stone-800 font-bold">Clientes</p>
+                        </div>
+                        <Slider/>
                     </div>
                 </div>
-            </div>
-            <NavBar/>
         </div>
-    </body>
-
+        <!-- footer -->
+        <div id="footer" class="bg-amber-500 text-stone-800 w-full pb-32">
+                        <div class="flex text-center justify-between bg-pink-500">
+                            <div id="scroll" class="flex gap-4 my-auto font-bold">
+                                <p>Sobre</p>
+                                <p>Contato</p>
+                                <p>Clientes</p>
+                            </div>
+                            <div id="site-info" class="flex flex-col gap-2">
+                                <p class="font-bold">João Vitor Braun</p>
+                                <p>© Braun Design. All rights reserved <br> 2022 </p>
+                            </div>
+                            <div id="media-info" class="flex gap-5 my-auto">
+                                <div id="git-hub">
+                                    <p>logo1</p>
+                                </div>
+                                <div id="linked-in">
+                                    <p>logo2</p>
+                                </div>
+                                <div id="instagram">
+                                    <p>logo3</p>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+    </div>
+    <NavBar/>
 </template>
 
 <script>
@@ -363,7 +381,8 @@ import IconDownload from '../Jetstream/IconDownload.vue'
 import DarkModeToggle from '../Jetstream/DarkModeToggle.vue'
 import Input from '../Jetstream/Input.vue'
 import { onBeforeMount, onMounted } from 'vue'
-
+import Experience from '../Jetstream/Icons/experience.vue'
+import Slider from '../Jetstream/Slider.vue'
 
 
 export default {
@@ -378,6 +397,8 @@ export default {
         Input,
         Head,
         Link,
+        Experience,
+        Slider,
     },
 
     setup() {

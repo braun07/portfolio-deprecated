@@ -18,7 +18,7 @@
         @inertiaHead
     </head>
     <body class="">
-        <div class="font-sans antialiased">
+        <div class="font-sans antialiased bg-slate-200 dark:bg-stone-800">
             @inertia
     
             @env ('local')
