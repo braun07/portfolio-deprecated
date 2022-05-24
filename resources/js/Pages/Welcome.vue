@@ -301,7 +301,7 @@
                                     <p class="dark:text-white text-stone-800">icon</p>
                                     <p class="text-3xl dark:text-slate-200 text-stone-800">Whatsapp</p>
                                     <p class="text-stone-800 text-3xl dark:text-slate-200">+55 33 9 9819-1460</p>
-                                    <p class="text-amber-500 text-3xl hover:text-amber-600 hover:font-normal hover:cursor-pointer">Me escreva</p>
+                                    <p class="text-amber-500 text-3xl hover:text-amber-600 hover:font-normal ease-in-out transform transition hover:cursor-pointer">Me escreva</p>
                                 </div>
                             </div>
                             <div class="flex flex-col gap-6 p-5">
