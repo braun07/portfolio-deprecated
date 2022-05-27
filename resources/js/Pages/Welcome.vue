@@ -74,12 +74,12 @@
                                             <p class="font-medium text-2xl">Experiência</p>
                                         </div>
                                         <div class="bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
-                                            <p class="text-amber-500">ICON</p>
+                                            <Projects class="mx-auto fill-amber-500"/>
                                             <p class="font-light text-xl">+4 projetos</p>
                                             <p class="font-medium text-2xl">Completos</p>
                                         </div>
                                         <div class="bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx py-3 justify-between px-5" style="backdrop-filter: blur(20px);">
-                                            <p class="text-amber-500">ICON</p>
+                                            <Prototypes class="mx-auto fill-amber-500"/>
                                             <p class="font-light font-xl">+12 Prototípos</p>
                                             <p class="font-medium text-2xl">Finalizados</p>
                                         </div>
@@ -292,7 +292,7 @@
                         <div class="flex flex-row justify-center mx-auto gap-48 mb-444 font-light">
                             <div class="flex flex-col gap-8 text-center">
                                 <div class="flex gap-2 flex-col p-6 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx" style="backdrop-filter: blur(20px);">
-                                    <p class="dark:text-white text-stone-800">icon</p>
+                                    <Mail class="dark:fill-slate-200 fill-stone-800 mx-auto"/>
                                     <p class="text-3xl dark:text-slate-200 text-stone-800">Email</p>
                                     <p class="text-stone-800 text-2xl dark:text-slate-200">joaovitorbraun6@gmail.com</p>
                                     <a
@@ -302,7 +302,7 @@
                                     </a>
                                 </div>
                                 <div class="flex gap-2 flex-col p-6 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx" style="backdrop-filter: blur(20px);">
-                                    <p class="dark:text-white text-stone-800">icon</p>
+                                    <Wpp class="dark:fill-slate-200 fill-stone-800 mx-auto"/>
                                     <p class="text-3xl dark:text-slate-200 text-stone-800">Whatsapp</p>
                                     <p class="text-stone-800 text-3xl dark:text-slate-200">+55 33 9 9819-1460</p>
                                     <a href="//api.whatsapp.com/send?phone=+5533998191460&text=Olá Gostaria de conversar sobre negócios!" class="text-amber-500 text-3xl hover:text-amber-600 hover:font-normal ease-in-out transform transition hover:cursor-pointer">Me escreva</a>
@@ -386,6 +386,10 @@ import DarkModeToggle from '../Jetstream/DarkModeToggle.vue'
 import Input from '../Jetstream/Input.vue'
 import { onBeforeMount, onMounted } from 'vue'
 import Experience from '../Jetstream/Icons/experience.vue'
+import Projects from '../Jetstream/Icons/projects.vue'
+import Prototypes from '../Jetstream/Icons/prototypes.vue'
+import Mail from '../Jetstream/Icons/mail.vue'
+import Wpp from '../Jetstream/Icons/wpp.vue'
 import Slider from '../Jetstream/Slider.vue'
 
 
@@ -403,6 +407,10 @@ export default {
         Link,
         Experience,
         Slider,
+        Projects,
+        Prototypes,
+        Mail,
+        Wpp,
     },
 
     setup() {
