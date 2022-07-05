@@ -1,6 +1,6 @@
 <template>
     <nav class="fixed bottom-6 w-full">
-        <div class="w-1/4 p-4 rounded-1xl bg-stone-900 bg-opacity-50 bg-clip-padding mx-auto"  style="backdrop-filter: blur(20px);">
+        <div class="w-444 p-4 rounded-1xl bg-stone-900 bg-opacity-50 bg-clip-padding mx-auto"  style="backdrop-filter: blur(20px);">
             <ul class="flex justify-between items-center">
                 <li>
                     <a href="#home">
