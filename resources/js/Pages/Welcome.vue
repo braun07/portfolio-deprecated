@@ -70,10 +70,10 @@
                                     </div>
                                     <div class="text-stone-800 dark:text-slate-200 my-9 text-2xl text-justify whitespace-normal mx-auto" id="dev">
                                         <p>
-                                            Como Desenvolvedor Frontend sou responsável pela criação
-                                            de páginas com a interface de usuário baseada em UI / UX,
-                                            sou autoditata, estou sempre correndo atrás de conhecimento
-                                            para melhorar o meu desenvolvimento profissional.
+                                             Como Desenvolvedor Frontend sou responsável pela criação
+                                            de páginas com a interface de usuário baseada em UI/UX,
+                                            sou autoditata, e busco sempre melhorar o meu desenvolvimento
+                                            profissional.
                                         </p>
                                     </div>
                                     <div>
@@ -286,8 +286,8 @@
                             <p class="text-2xl dark:text-slate-200 text-stone-800 font-normal">Formas de</p>
                             <p class="text-4xl dark:text-amber-500 text-stone-800 font-bold">Contato</p>
                         </div>
-                        <div class="flex flex-col xl:flex-row justify-between mx-auto mb-444 font-light max-w-7xl">
-                            <div class="flex flex-col lg:flex-row xl:flex-col gap-8 text-center justify-between mx-auto">
+                        <div class="flex xl:flex-row justify-between mx-auto mb-444 font-light max-w-7xl">
+                            <div class="flex flex-col lg:flex-row gap-8 text-center justify-between mx-auto">
                                 <div class="flex flex-col p-6 m-4 bg-white dark:bg-stone-700 bg-opacity-80 bg-clip-padding rounded-lx w-96" style="backdrop-filter: blur(20px);">
                                     <Mail class="dark:fill-slate-200 fill-stone-800 mx-auto my-4"/>
                                     <p class="text-2xl dark:text-slate-200 text-stone-800">Email</p>
@@ -305,46 +305,7 @@
                                     <a href="//api.whatsapp.com/send?phone=+5533998191460&text=Olá Gostaria de conversar sobre negócios!" class="text-amber-500 text-2xl hover:text-amber-600 hover:font-normal ease-in-out transform transition hover:cursor-pointer">Me escreva</a>
                                 </div>
                             </div>
-                            <div class="flex flex-col p-5 m-6 max-w-7xl">
-                                <div class="dark:text-slate-200 text-stone-800 text-2xl font-bold text-center mb-8">
-                                    <p>Me envie um e-mail</p>
-                                </div>
-                                <div class="w-80 md:w-444 lg:w-[48rem] xl:w-[37.5rem] mx-auto">
-                                    <form action="" class="flex flex-col justify-between">
-                                        <div>
-                                            <label class="flex flex-col">
-                                                <span class="text-stone-800 dark:text-slate-200 ml-3">Nome:</span>
-                                                <input type="text" placeholder="Seu nome" class="dark:text-gray-600 font-light placeholder:italic text-stone-800 dark:placeholder:text-white placeholder:text-stone-800 dark:bg-stone-700 bg-white border border-amber-500 rounded-lx focus:border-amber-300 focus:ring focus:ring-amber-200 focus:ring-opacity-50" id="name">
-                                            </label>
-                                        </div>
-                                        <div class="my-6">
-                                            <label class="flex flex-col">
-                                                <span class="text-stone-800 dark:text-slate-200 ml-3">Email:</span>
-                                                <input type="text" placeholder="Seuemail@email.com" class="dark:text-slate-200 w-auto font-light placeholder:italic text-stone-800 dark:placeholder:text-white placeholder:text-stone-800 dark:bg-stone-700 bg-white border border-amber-500 rounded-lx focus:border-amber-300 focus:ring focus:ring-amber-200 focus:ring-opacity-50" id="mail">
-                                            </label>
-                                        </div>
-                                        <div>
-                                            <label class="flex flex-col">
-                                                <span class="text-stone-800 dark:text-slate-200 ml-3">Serviço:</span>
-                                                <textarea rows="4" placeholder="Digite aqui o servico ao qual deseja solicitar" class="dark:text-slate-200 w-auto font-light placeholder:italic text-stone-800 dark:placeholder:text-white placeholder:text-stone-800 dark:bg-stone-700 bg-white border border-amber-500 rounded-lx focus:border-amber-300 focus:ring focus:ring-amber-200 focus:ring-opacity-50" id="job"></textarea>
-                                            </label>
-                                        </div>
-                                        <button class="w-full h-16 mt-9 bg-amber-500 text-slate-200 font-bold dark:text-stone-800 rounded-lx text-2xl hover:bg-amber-600 ease-in-out transform transition">Enviar</button>
-                                    </form>
-
-                                </div>
-                            </div>
                         </div>
-                    </div>
-
-
-                    <!-- testimonial -->
-                    <div id="testimonial" class="scroll-mt-12 my-60">
-                        <div class="mt-36 mb-24 text-center">
-                            <p class="text-2xl dark:text-slate-200 text-stone-800 font-normal">FeedBack de</p>
-                            <p class="text-4xl dark:text-amber-500 text-stone-800 font-bold">Clientes</p>
-                        </div>
-                        <Slider/>
                     </div>
                 </div>
         </div>
@@ -354,7 +315,6 @@
                 <div id="scroll" class="flex gap-6 my-auto font-bold text-2xl col-span-2">
                     <a href="#about" class="hover:scale-110 duration-300 ease-in-out transform transition hover:text-slate-200">Sobre</a>
                     <a href="#contact" class="hover:scale-110 duration-300 ease-in-out transform transition hover:text-slate-200">Contato</a>
-                    <a href="#testimonial" class="hover:scale-110 duration-300 ease-in-out transform transition hover:text-slate-200">Clientes</a>
                 </div>
                 <div class="flex-col flex col-span-2 text-2xl text-center">
                     <p class="font-bold">João Vitor Braun</p>
