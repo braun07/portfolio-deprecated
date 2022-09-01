@@ -28834,7 +28834,7 @@ var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
     "class": "align-content-center m-5 sm:flex hidden"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
     "class": "text-amber-500 text-xl sm:text-4xl font-semibold"
-  }, "Braun"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  }, "Portfólio"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "w-full h-1 bg-stone-800 dark:bg-slate-200"
   })], -1
   /* HOISTED */
@@ -28875,7 +28875,7 @@ var _hoisted_9 = /*#__PURE__*/_withScopeId(function () {
     "class": "text-4xl sm:text-7xl my-2 text-amber-500 font-bold"
   }, "João Braun"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "text-sm sm:text-xl dark:text-slate-200 text-stone-800 font-light"
-  }, "Desenvolvedor Frontend")], -1
+  }, "Desenvolvedor FullStack")], -1
   /* HOISTED */
   );
 });
@@ -29452,7 +29452,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_NavBar = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("NavBar");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
-    title: "Welcome"
+    title: "Braun"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" TopBar "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "#",
     onClick: _cache[0] || (_cache[0] = function () {

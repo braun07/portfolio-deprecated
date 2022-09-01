@@ -1,11 +1,11 @@
 <template>
-    <Head title="Welcome" />
+    <Head title="Braun" />
     <div id="home" class="relative flex flex-col items-top min-h-screen font-body w-full h-full mx-auto justify-center align-content-center">
         <div class="flex-col flex mx-28 mt-10">
                 <!-- TopBar -->
                 <div class="flex sm:flex-row flex-col w-full justify-between items-center">
                     <div class="align-content-center m-5 sm:flex hidden">
-                        <h2 class="text-amber-500 text-xl sm:text-4xl font-semibold">Braun</h2>
+                        <h2 class="text-amber-500 text-xl sm:text-4xl font-semibold">Portfólio</h2>
                         <div class="w-full h-1 bg-stone-800 dark:bg-slate-200"></div>
                     </div>
                     <div>
@@ -31,7 +31,7 @@
                         <div class="text-center mx-auto mt-9">
                             <p class="text-xl sm:text-4xl dark:text-slate-200 text-stone-800">Olá, eu sou o</p>
                             <p class="text-4xl sm:text-7xl my-2 text-amber-500 font-bold">João Braun</p>
-                            <p class="text-sm sm:text-xl dark:text-slate-200 text-stone-800 font-light">Desenvolvedor Frontend</p>
+                            <p class="text-sm sm:text-xl dark:text-slate-200 text-stone-800 font-light">Desenvolvedor FullStack</p>
                         </div>
                         <div class="relative w-60 sm:w-444 mx-auto justify-center hidden ssm:flex">
                             <img class="w-48 ssm:w-60 sm:w-444 absolute inset-y-1/4" src="../images/meHeader.png"/>
